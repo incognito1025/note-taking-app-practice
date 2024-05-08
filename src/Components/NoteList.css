@@ -1,0 +1,48 @@
+
+
+/* Note list container */
+.note-list-container {
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  color: var(--gray);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjusted to grid of 3 columns */
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px; /* Added gap between columns */
+  padding: 10px 25px;
+}
+
+.note-list-container a {
+  border-bottom: 1px solid var(--primary);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.notes {
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  padding: 10px; /* Optional: Adds padding inside the card */
+  /* Add other styling as needed */
+}
+
+.notes .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.note .body {
+  border-top: 1px solid var(--primary);
+  padding-top: 10px;
+  font-size: 12px;
+  margin: 0 0 5px;
+}
+
+.note .category span {
+  font-weight: bold;
+}
+
+/* Add more styling as needed */
+
+
+/*
+

@@ -1,0 +1,95 @@
+/* Mike - Update your css code with the following. tbh I'm still not very familiar with all the css styling codes, so I made some notes for myself to remind me of the purpose.  
+
+
+/* Container for the form */
+.create-new-note-container {
+  border: 2px solid #ccc; /* Border around the entire form */
+  border-radius: 0px; /* Rounded corners for the border */
+  padding: 150px; /* Padding inside the border */
+  display: grid;
+  /* margin: auto; */
+  grid-template-columns: repeat(3, 1fr); /* Adjusted to grid of 3 columns */
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  margin-right: 50px;
+  margin-left: 50px;
+  gap: 20px; /* Added gap between columns */
+  padding: 10px 25px;
+}
+
+/* Style for note inputs */
+.note-inputs {
+  flex: 1; /* Take up remaining space */
+  padding-right: 20px; /* Spacing between inputs and preview */
+}
+
+/* Style for note preview */
+.note-preview {
+  flex: 1; /* Take up remaining space */
+  padding: 100px; /* Padding inside the preview */
+  border: 2px solid #ccc; /* Border around the preview */
+  border-radius: 0px; /* Rounded corners for the border */
+  margin-left: 20px; /* Spacing between preview and container edge */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.create-new-note-container .new-note {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 100px;
+}
+
+/* Labels for form inputs */
+label {
+  margin-bottom: 5px;
+}
+
+/* Text input fields and select */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Specific input styles - submit button */
+.title-border {
+  width: 150%; /* Adjusted width */
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  outline: none;
+   
+}
+
+/* Submit button */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Focus styles (optional) */
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+.submit-button:focus {
+  outline: 2px solid #007bff;
+  /* Add any additional focus styles here */
+}

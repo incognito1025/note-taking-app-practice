@@ -1,0 +1,100 @@
+/* Nav.css */
+
+.nav-wrapper-one {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the content */
+    padding: 15px 15px; /* Adjust padding as needed */
+    position: relative; /* Added for positioning the sidebar */
+}
+
+.nav-links {
+    display: flex; /* Make sure the links are displayed in a row */
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    margin-right: 50px; /* Add margin between links */
+}
+
+/* Move links to the right */
+.nav-links {
+    margin-left: auto;
+    font-size: 15px;
+}
+
+/* Styling for the hamburger menu icon */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 2; /* Ensure the icon is above the sidebar */
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+/* Animation for the menu sliding in */
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 70px; /* Adjust as needed */
+    right: 15px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.menu-links.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-links a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px; /* Add margin between links */
+}
+
+/* Highlight effect for horizontal links */
+.nav-links a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Nav.css */
+
+/* Your existing styles */
+
+.dashboard-sidebar {
+    position: absolute;
+    top: 0;
+    right: -200px; /* Initially hidden */
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 10; /* Ensure sidebar is above other content */
+}
+
+.dashboard-sidebar.open {
+    right: 0; /* Displayed when menu is open */
+}
+
+.dashboard-sidebar a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.dashboard-sidebar a:hover {
+    background-color: #f0f0f0;
+}

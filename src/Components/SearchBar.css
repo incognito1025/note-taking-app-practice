@@ -1,0 +1,32 @@
+.search-bar-container {
+    position: relative; /* Ensure relative positioning for absolute positioning */
+    background-color: gray;
+    height: auto; /* Adjust height as needed */
+    padding: 50px; /* Adjust padding as needed */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: flex-end;
+    
+  
+  }
+  
+  .search-bar {
+    position: absolute; /* Changed to relative */
+    bottom: 10px; /* Align the search bar to the bottom */
+    left: 50%; /* Center the search bar horizontally */
+    transform: translateX(-50%); /* Center the search bar horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 150%; /* Adjusted width */
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    
+  }

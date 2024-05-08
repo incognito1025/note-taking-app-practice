@@ -1,0 +1,28 @@
+[
+    {
+        "id": "12kjahds",
+        "title" : "Shopping list",
+        "body" : "milk, cookies, toilet paper",
+        "category" : "groceries"
+    },
+    {
+        "id": "98sdfh31",
+        "title" : "Meeting Notes",
+        "body" : "Discussed project timeline and assigned tasks.",
+        "category" : "work"
+    },
+    {
+        "id": "8sdfj202",
+        "title" : "Recipe",
+        "body" : "Ingredients: 2 cups flour, 1 cup sugar, 1 tsp baking powder...",
+        "category" : "cooking"
+    },
+    {
+        "id": "3jfoe1sd",
+        "title" : "To-Do List",
+        "body" : "1. Finish report\n2. Call mom\n3. Buy birthday gift",
+        "category" : "tasks"
+    }
+]
+
+
